@@ -20,8 +20,8 @@ void ServerConfig::loadDefaults() {
     serverCertPath = "certs/server.crt";
     serverKeyPath  = "certs/server.key";
 
-    aesKey = "0123456789abcdef0123456789abcdef";
-    aesIV  = "abcdef9876543210";
+    aesKey = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
+    aesIV  = "abcdef9876543210abcdef9876543210";
 }
 
 void ServerConfig::loadFromFile(const std::string& path) {
