@@ -12,17 +12,17 @@ ClientConfig::ClientConfig(const std::string& configPath) {
 }
 
 void ClientConfig::loadDefaults() {
-    tunName = "tun0";
+    tunName = "tun1";
 
     serverIP = "127.0.0.1";
-    serverPort = 6060;
+    serverPort = 4433;
 
     caCertPath     = "certs/ca.crt";
     clientCertPath = "certs/client.crt";
     clientKeyPath  = "certs/client.key";
 
-    aesKey = "0123456789abcdef0123456789abcdef";
-    aesIV  = "abcdef9876543210";
+    aesKey = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
+    aesIV  = "abcdef9876543210abcdef9876543210";
 }
 
 void ClientConfig::loadFromFile(const std::string& path) {
